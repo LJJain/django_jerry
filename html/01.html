@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 練習</title>
+
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+        const PI = 3.1415926;
+        console.log(PI);
+
+        var a = 10;
+        console.log(a, typeof(a));
+
+        if (a >= 10) {
+            var a = '5';
+            console.log(a**2*PI);
+        }
+
+        console.log(a, typeof(a));
+
+        // var 與 let 區別       
+        // console.log(r, typeof(r));
+
+        // 輸入語法
+        let x = prompt('請輸入半徑:');
+        let area = 0;
+        if (x >= 10) {
+            // 若區域變數前有加上let，就會重新定義 (全域/區域變數不互相影響)
+            // 若變數前沒加上let，會直接改變全域變數
+            let x = '5';
+            console.log(x**2*PI);
+            area = x**2*PI;
+        }
+
+        // console.log(r, typeof(r));
+        // 輸出
+        console.log(area);  // console端
+        document.write('<h2>面積為'+ area + '</h2>');   // 寫在網頁上
+        alert('面積:' + area);  // alert彈窗
+    </script>
+</body>
+</html>
